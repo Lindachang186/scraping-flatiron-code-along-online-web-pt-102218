@@ -23,7 +23,7 @@ class Scraper
   end
 
   def make_courses
-    self.get_courses.each do |key, value|
+    self.get_courses.each do |info|
       key.each do |info, d|
       binding.pry
     course = Course.new
